@@ -1,4 +1,3 @@
-
 let walletAddress = "0x630f8F0bD1207943a1AF963aE0FBBEe52FBC7d6B";
 
 const connectButton = document.getElementById("connectWalletButton");
