@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Election Results</h1>
+    <p>Campus Voting System</p>
+</header>
+
+<main>
+    <section>
+        <h2>Election Status</h2>
+        <p id="resultStatus">Loading...</p>
+
+        <h2>Candidate Results</h2>
+        <div id="resultsList">Loading results...</div>
+
+        <h3 id="resultTotal">Total votes: 0</h3>
+
+        <button onclick="loadResults()">Refresh Results</button>
+        <a href="index.html"><button>Back to Home</button></a>
+    </section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+<script src="results.js"></script>
+
+</body>
+</html>

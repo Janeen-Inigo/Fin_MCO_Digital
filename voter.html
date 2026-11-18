@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Registration and Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Voter Portal</h1>
+    <p>Campus Voting System</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>Connect MetaMask</h2>
+        <button id="connectWalletButton">Connect Wallet</button>
+        <p id="walletStatus">Not connected</p>
+    </section>
+
+    <section>
+        <h2>Voter Registration</h2>
+
+        <input type="text" id="fullName" placeholder="Full Name">
+        <input type="text" id="studentId" placeholder="Student ID">
+        <input type="email" id="email" placeholder="Email Address">
+
+        <button id="registerButton">Register</button>
+    </section>
+
+    <section>
+        <h2>Voter Login</h2>
+
+        <input type="text" id="loginStudentId" placeholder="Student ID">
+        <button id="loginButton">Login</button>
+    </section>
+
+    <p id="message"></p>
+
+    <a href="index.html">Back to Home</a>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+<script src="voter.js"></script>
+
+</body>
+</html>

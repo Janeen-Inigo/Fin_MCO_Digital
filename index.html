@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Campus Voting System</h1>
+    <p>Decentralized Campus Election Platform</p>
+</header>
+
+<main>
+    <section>
+        <h2>Wallet Connection</h2>
+        <button id="connectButton">Connect MetaMask</button>
+        <p id="walletStatus">Not connected</p>
+        <p id="electionStatus">Election status: Unknown</p>
+    </section>
+
+    <section>
+        <h2>Voter Portal</h2>
+
+        <h3>Candidate List</h3>
+        <div id="candidateList">
+            Connect your wallet to view candidates.
+        </div>
+
+        <p id="totalVotes">Total votes: 0</p>
+    </section>
+
+    <section>
+        <h2>Electoral Admin Panel</h2>
+
+        <h3>Add Candidate</h3>
+        <input
+            type="text"
+            id="candidateName"
+            placeholder="Enter Candidate Name"
+        >
+
+        <input
+            type="text"
+            id="candidatePosition"
+            placeholder="Enter Position"
+        >
+
+        <button id="addCandidateButton">
+            Add Candidate
+        </button>
+
+        <hr>
+
+        <h3>Authorize Voter</h3>
+        <input
+            type="text"
+            id="voterAddress"
+            placeholder="Enter Voter Wallet Address"
+        >
+
+        <button id="authorizeVoterButton">
+            Authorize Voter
+        </button>
+
+        <hr>
+
+        <h3>Election Management</h3>
+        <button id="startElectionButton">
+            Start Election
+        </button>
+
+        <button id="endElectionButton">
+            End Election
+        </button>
+    </section>
+</main>
+
+<footer>
+    <p>Campus Voting System | Blockchain Project</p>
+    <p>Powered by Ethereum Smart Contract</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
